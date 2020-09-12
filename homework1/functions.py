@@ -37,17 +37,17 @@ print(type(get_unique_elements(l2)))
 l3 = ([55, 2, 4, "v", 5, True])
 
 
-def break_list_by_value(list3):
+def break_list_by_value(list3, divider):
     """Creating 2 empty lists. Adding first half of list to  temp_list,
     then adding all parameters from temp_list to main_list and deleting everything from
     temp_list(lemp_list.clear()). Adding the second part of the list (after "v" separator) to temp_list again.
     If temp_list has value in it
     adding temp_list to main list and returning both list in a tuple."""
-    value = "v"
+
     main_list = []
     temp_list = []
     for e in list3:
-        if e is value:
+        if e is divider:
             main_list.append(temp_list[:])
             temp_list.clear()
         else:
@@ -58,5 +58,5 @@ def break_list_by_value(list3):
 
 
 print(break_list_by_value.__doc__)
-print(break_list_by_value(l3))
-print(type(break_list_by_value(l3)))
+print(break_list_by_value(l3, "v"))
+print(type(break_list_by_value(l3, "v")))
