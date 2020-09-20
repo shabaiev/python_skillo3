@@ -7,7 +7,6 @@ class Animal:
 
     def say(self):
         return "Hi, I am {} {} and I am {} !".format(self.animal_type, self.name, self.age)
-        # return f"Hi, I am {self.name} and I am {self.age}!"
 
 
 class Dolphin(Animal):
@@ -20,6 +19,3 @@ class Zebra(Animal):
 
 d = Dolphin(age=20, name="Chuck")
 z = Zebra("Zelda", 30)
-
-print(d.say())
-print(z.say())
