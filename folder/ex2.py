@@ -20,12 +20,10 @@ class Rectangle(Shape):
     def area(self):
         return self.width * self.height
 
-        # (w * h) / 2
-        # w * h
-
 
 triangle = Triangle(w=10, h=12)
 rectangle = Rectangle(w=10, h=12)
 
 print(triangle.area())
 print(rectangle.area())
+
