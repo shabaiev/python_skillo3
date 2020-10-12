@@ -1,6 +1,10 @@
-def square_nums(n):
-    for num in range(n):
-        yield num ** 2
+def square_nums():
+    i = 0
+    while True:
+        yield i ** 2
+        i += 1
 
 
-mygen = square_nums(1000000)
+my_gen = square_nums()
+
+
