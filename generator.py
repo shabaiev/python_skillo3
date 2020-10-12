@@ -4,6 +4,3 @@ def square_nums(n):
 
 
 mygen = square_nums(1000000)
-
-
-
