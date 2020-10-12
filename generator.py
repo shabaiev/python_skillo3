@@ -1,32 +1,9 @@
-def square_nums(nums):
-    for i in nums:
-        while i > 0:
-            yield i * i
-            i += 1
+def square_nums(n):
+    for num in range(n):
+        yield num ** 2
 
 
-my_nums = square_nums([1, 2, 9, 16, 25, 36])
+mygen = square_nums(1000000)
 
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
-print(next(my_nums))
+
+
